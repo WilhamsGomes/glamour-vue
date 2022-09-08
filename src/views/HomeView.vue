@@ -11,7 +11,7 @@
     <Video/>
     <Footer/>
   </v-app>
-</template>
+</template> 
 
 <script>
 
@@ -60,9 +60,9 @@
   
   #logoG{
     margin-top: 60px;
-    margin-left: 900px;
+    left: 60%;
     width: 600px;
-    z-index: 0;
+    z-index: 20;
     position: absolute;
     opacity: 0.1;
   }

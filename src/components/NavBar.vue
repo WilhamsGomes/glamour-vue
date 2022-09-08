@@ -7,7 +7,7 @@
                 <v-tab to="">Eventos</v-tab>
                 <v-tab to="">Serviços</v-tab>
                 <v-tab to="">Contato</v-tab>
-            </v-tabs>
+            </v-tabs> 
             
             <v-btn v-for="icon in icons" :key="icon" class="mx-2" dark icon >
                 <v-icon size="20px">
