@@ -83,6 +83,11 @@
     flex-direction: column;
 }
 
+.numbers{
+    z-index: 999999999999;
+    margin-top: -100px;
+}
+
 @media screen and (max-width: 600px) {
 
     #number{

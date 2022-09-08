@@ -2,9 +2,10 @@
  <v-app id="inspire">
     <NavBar/>
     <PageInicial/>
+    <BtnWhatsApp/>
+    <img id="logoG" src="../assets/LOGO.G-VERDE.png"/>
     <Numbers/>
     <Feedback/>
-    <Carrossel/>
     <Controle/>
     <CarouselInfo/>
     <Video/>
@@ -23,6 +24,7 @@
   import CarouselInfo from "@/components/CarouselInfo.vue";
   import Footer from "@/components/Footer.vue";
   import Video from "@/components/Video.vue";
+  import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
   
     export default {
       name:"HomeView",
@@ -44,7 +46,8 @@
     Controle,
     CarouselInfo,
     Footer,
-    Video
+    Video,
+    BtnWhatsApp
 }
     }
 </script>
@@ -55,12 +58,13 @@
     background-color: #fff;
   }
   
-  .img-flutuante{
-      position: absolute;
-      width: 180px;
-      left: 40px;
-      top: 80px;
-      animation: rotate 5s linear infinite;
+  #logoG{
+    margin-top: 60px;
+    margin-left: 900px;
+    width: 600px;
+    z-index: 0;
+    position: absolute;
+    opacity: 0.1;
   }
   
   @keyframes rotate {

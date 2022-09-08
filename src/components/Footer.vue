@@ -1,7 +1,7 @@
 <template>
     <v-footer dark padless >
       <v-card class="flex" flat tile >
-        <v-card-title class="green">
+        <!-- <v-card-title class="green">
           <strong class="subheading">Get connected with us on social networks!</strong>
   
           <v-spacer></v-spacer>
@@ -11,7 +11,7 @@
               {{ icon }}
             </v-icon>
           </v-btn>
-        </v-card-title>
+        </v-card-title>-->
   
         <v-card-text class="py-2 white--text text-center">
           {{ new Date().getFullYear() }} — <strong> Glamour Assessoria de Eventos &#169 Todos os direitos reservados</strong>

@@ -1,12 +1,19 @@
-<template>
+<template> 
     <div class="app">
-        <v-app-bar app color="#34B450" flat >  
+        <v-app-bar app color="#34B450" flat>  
+            <img src="../assets/GLAMOURPNG.png" width="100px"/>
             <v-tabs centered class="ml-n9" color="#fff" dark>
                 <v-tab to="">Home</v-tab>
                 <v-tab to="">Eventos</v-tab>
                 <v-tab to="">Serviços</v-tab>
                 <v-tab to="">Contato</v-tab>
             </v-tabs>
+            
+            <v-btn v-for="icon in icons" :key="icon" class="mx-2" dark icon >
+                <v-icon size="20px">
+                {{ icon }}
+                </v-icon>
+            </v-btn>
         </v-app-bar>
     </div>
     
@@ -15,7 +22,13 @@
 <script>
     export default {
         name: "NavBar",
-        
+        data: () => ({
+            icons: [
+                'mdi-facebook',
+                'mdi-youtube',
+                'mdi-instagram',
+            ],
+        }),
     }
 </script>
 

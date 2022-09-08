@@ -7,9 +7,10 @@
                         <v-btn href="https://web.whatsapp.com/" target="_blank" id="button" class="ml-16 mb-16">Entrar em contato</v-btn>
                     </v-col>
                     <v-col lg="6" cols="6" class="d-flex">
-                        <!--<img class="ml-16" src="../assets/moca.png" width="450"/>       -->
+                        <img class="ml-16" src="../assets/moca.png" width="450"/>      
                     </v-col>
             </v-row>
+            
         </section>
     </div>
 </template>
