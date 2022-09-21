@@ -34,5 +34,17 @@
     margin-top: 180px;
 }
 
+.controle::before{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 800px;
+    border-bottom-right-radius: 25px;
+    background-color: #34B450;
+    transform: skewX(-380deg);
+    left: 850px;
+    top: 1700px;
+   
+} 
 
 </style>

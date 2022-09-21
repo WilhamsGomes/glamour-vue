@@ -138,4 +138,17 @@
   transition: 0.6s ease-out;
 }
 
+.app::before{
+    content: '';
+    position: absolute;
+   
+    width: 950px;
+    height: 800px;
+    border-bottom-right-radius: 25px;
+    background-color: #34B450;
+    transform: skewY(-380deg);
+    top: -250px;
+   
+} 
+
 </style>

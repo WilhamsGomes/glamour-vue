@@ -3,11 +3,11 @@
         <section class="intro-section" id="home">
           <v-row class="align-center justify-space-around px-12 mb-16" >
                     <v-col lg="6" cols="6" class="pa-6 py-16">
-                        <p id="title" class="display-3 white--text font-weight-bold ml-16 mt-16 mb-16">Há 18 anos, a empresa líder em clientes satisfeitos!</p>
-                        <v-btn href="https://web.whatsapp.com/" target="_blank" id="button" class="ml-16 mb-16">Entrar em contato</v-btn>
+                        <Window/>
+                        <v-btn href="https://web.whatsapp.com/" target="_blank" id="button" class="ml-16 mb-16" rounded color="white" dark outlined>Entrar em contato</v-btn>
                     </v-col>
                     <v-col lg="6" cols="6" class="d-flex">
-                        <img id="foto" class="ml-16" src="../assets/moca.png" width="450"/>      
+                        <img id="foto" class="ml-16" src="../assets/FotoInicial.png" width="450" alt="Foto Formando"/>      
                     </v-col>
             </v-row>
             
@@ -16,29 +16,16 @@
 </template>
 
 <script>
+import Window from './Window.vue';
 
     export default {
     name: "PageInicial",
     data() {
         return {};
     },
-
-    mounted(){
-
-        const tituloCliente = document.getElementById('title');
-        const textoArray = tituloCliente.innerHTML.split('');
-        tituloCliente.innerHTML = '';
-
-        textoArray.forEach( (letra, i) =>{
-            setTimeout(function(){ 
-                tituloCliente.innerHTML += letra
-                tituloCliente.style.color = 'red'
-            }, 50 * i) 
-        });
-
-
+    components: { 
+        Window 
     }
-
 }
     
 </script>
@@ -56,14 +43,8 @@
 
 @media screen and (max-width: 600px) {
 
-    #title{
-        width: 250px;
-        line-height: 45px;
-        font-size: 40px !important;
-        margin-left: -40px !important;
-    }
-
     #button{
+        position: absolute !important; 
         margin-left: -40px !important;
     }
 

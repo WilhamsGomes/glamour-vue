@@ -64,7 +64,7 @@
     width: 600px;
     z-index: 20;
     position: absolute;
-    opacity: 0.1;
+    opacity: 1;
   }
   
   @keyframes rotate {
