@@ -34,6 +34,7 @@
     margin-top: 180px;
 }
 
+/*
 .controle::before{
     content: '';
     position: absolute;
@@ -45,6 +46,7 @@
     left: 850px;
     top: 1700px;
    
-} 
+}  
+*/
 
 </style>

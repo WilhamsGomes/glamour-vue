@@ -8,6 +8,7 @@
     <Feedback/>
     <Controle/>
     <CarouselInfo/>
+    <FlipbookPhoto/>
     <Video/>
     <Footer/>
   </v-app>
@@ -25,6 +26,7 @@
   import Footer from "@/components/Footer.vue";
   import Video from "@/components/Video.vue";
   import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
+  import FlipbookPhoto from "@/components/FlipbookPhoto.vue";
   
     export default {
       name:"HomeView",
@@ -38,17 +40,18 @@
           ],
       }),
       components: {
-    NavBar,
-    Numbers,
-    PageInicial,
-    Feedback,
-    Carrossel,
-    Controle,
-    CarouselInfo,
-    Footer,
-    Video,
-    BtnWhatsApp
-}
+          NavBar,
+          Numbers,
+          PageInicial,
+          Feedback,
+          Carrossel,
+          Controle,
+          CarouselInfo,
+          Footer,
+          Video,
+          BtnWhatsApp,
+          FlipbookPhoto
+      }
     }
 </script>
 
