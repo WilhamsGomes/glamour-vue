@@ -15,15 +15,21 @@
             Flipbook 
         },
        data(){
-        return{
-            pages: [
-                null,
-                'https://ts1.github.io/flipbook-vue/images/1.jpg',
-                'https://ts1.github.io/flipbook-vue/images/4.jpg',
-                'https://ts1.github.io/flipbook-vue/images/5.jpg',
-                'https://ts1.github.io/flipbook-vue/images/6.jpg',
-            ]
-        }
+            return{
+                pages: [
+                    null,
+                    'https://ts1.github.io/flipbook-vue/images/1.jpg',
+                    'https://ts1.github.io/flipbook-vue/images/4.jpg',
+                    'https://ts1.github.io/flipbook-vue/images/5.jpg',
+                    'https://ts1.github.io/flipbook-vue/images/6.jpg',
+                ]
+            }
+       },
+
+       methods: {
+            flipbookflipLeft(){
+
+            }
        }
     }
 </script>

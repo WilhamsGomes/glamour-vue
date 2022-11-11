@@ -29,7 +29,7 @@
   import Video from "@/components/Video.vue";
   import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
   import FlipbookPhoto from "@/components/FlipbookPhoto.vue";
-import FormWhatsApp from "@/components/FormWhatsApp.vue";
+  import FormWhatsApp from "@/components/FormWhatsApp.vue";
   
     export default {
       name:"HomeView",

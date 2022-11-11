@@ -90,7 +90,7 @@
 
 .card:hover ~ .card {
   position: relative;
-  left: 50px;
+  left: 80px;
   transition: 0.4s ease-out;
 }
 
@@ -150,5 +150,20 @@
     top: -250px;
    
 } 
+
+@media screen and (max-width: 900px){
+  
+    .container{
+        display: grid;
+        grid-template-columns: 100px 100px 100px ;
+        gap: 20px;
+        margin-bottom: 280px;
+    }
+
+    .card{
+      margin-left: -50px;
+    }
+
+}
 
 </style>

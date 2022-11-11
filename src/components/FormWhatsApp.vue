@@ -12,10 +12,7 @@
                         <v-text-field 
                             v-model="name"
                             label="Qual seu nome?"
-                            background-color="#125C07"
-                            color="white"
-                            outlined
-                            dark
+                            required
                         ></v-text-field>
                     </v-col>
                     <v-col cols="12">
