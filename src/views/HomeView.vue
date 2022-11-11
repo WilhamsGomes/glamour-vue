@@ -5,10 +5,12 @@
     <BtnWhatsApp/>
     <img id="logoG" src="../assets/LOGO.G-VERDE.png"/>
     <Numbers/>
+    <CarouselInfo/>
     <Feedback/>
     <Controle/>
-    <CarouselInfo/>
+    
     <FlipbookPhoto/>
+    <FormWhatsApp/>
     <Video/>
     <Footer/>
   </v-app>
@@ -27,6 +29,7 @@
   import Video from "@/components/Video.vue";
   import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
   import FlipbookPhoto from "@/components/FlipbookPhoto.vue";
+import FormWhatsApp from "@/components/FormWhatsApp.vue";
   
     export default {
       name:"HomeView",
@@ -40,18 +43,19 @@
           ],
       }),
       components: {
-          NavBar,
-          Numbers,
-          PageInicial,
-          Feedback,
-          Carrossel,
-          Controle,
-          CarouselInfo,
-          Footer,
-          Video,
-          BtnWhatsApp,
-          FlipbookPhoto
-      }
+    NavBar,
+    Numbers,
+    PageInicial,
+    Feedback,
+    Carrossel,
+    Controle,
+    CarouselInfo,
+    Footer,
+    Video,
+    BtnWhatsApp,
+    FlipbookPhoto,
+    FormWhatsApp
+}
     }
 </script>
 

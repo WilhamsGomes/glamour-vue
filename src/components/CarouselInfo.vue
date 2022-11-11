@@ -10,35 +10,35 @@
             </div>
         </div>
         <div class="card">
-            <h3 class="title">PRÉ EVENTO</h3>
+            <h3 class="title">AULA DA <br> SAUDADE</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
-            <h3 class="title">PRÉ EVENTO</h3>
+            <h3 class="title">CULTO ECOMÊNICO</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
-            <h3 class="title">PRÉ EVENTO</h3>
+            <h3 class="title">COLAÇÃO DE GRAU</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
-            <h3 class="title">PRÉ EVENTO</h3>
+            <h3 class="title">BAILE DE FORMATURA</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
-            <h3 class="title">PRÉ EVENTO</h3>
+            <h3 class="title">EVENTOS CORPORATIVOS</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
