@@ -96,7 +96,7 @@
     .app::before{
         content: '';
         position: absolute;
-        left: -550px;
+        left: -650px;
         width: 950px;
         height: 800px;
         border-bottom-right-radius: 25px;
