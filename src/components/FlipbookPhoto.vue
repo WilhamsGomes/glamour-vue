@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Flipbook class="flipbook mt-16"  :pages="pages" :startPage="1" :clickToZoom="false"/>
+        <Flipbook class="flipbook mt-16"  :pages="pages" :startPage="2" :clickToZoom="false"/>
     </div>
 </template>
 

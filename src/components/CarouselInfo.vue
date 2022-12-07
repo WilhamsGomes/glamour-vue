@@ -4,7 +4,7 @@
             <h3 class="title">PRÉ EVENTO</h3>
             <div class="bar">
                 <div class="emptybar">
-                    <p> O pré-evento é o momento em que a organização é efetivamente feita</p>
+                    <p>Pré evento é o primeiro evento oficial da turma. Realização de ensaios fotográficos para confecção dos materiais gráficos.</p>
                 </div>
                 <div class="filledbar"></div>
             </div>
@@ -12,21 +12,21 @@
         <div class="card">
             <h3 class="title">AULA DA <br> SAUDADE</h3>
             <div class="bar">
-                <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
+                <div class="emptybar">Concretiza-se a finalização de um ciclo. Momento no qual a turma recorda todos os milênios vividos juntos na instituição.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
-            <h3 class="title">CULTO ECOMÊNICO</h3>
+            <h3 class="title">CULTO ECUMÊNICO</h3>
             <div class="bar">
-                <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
+                <div class="emptybar">Cerimônia religiosa de formatura em que as pessoas refletem, agradecem e se conectam com sua fé.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
         <div class="card">
             <h3 class="title">COLAÇÃO DE GRAU</h3>
             <div class="bar">
-                <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
+                <div class="emptybar">Cerimônia acadêmica tradicional e de caráter obrigatório para a outorga de grau do bacharel ou licenciado.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="card">
             <h3 class="title">EVENTOS CORPORATIVOS</h3>
             <div class="bar">
-                <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
+                <div class="emptybar">São uma das vias que nos proporcionam experiências e interações. Feiras, Workshops, confraternizações...</div>
                 <div class="filledbar"></div>
             </div>
         </div>
@@ -114,7 +114,7 @@
   background-color: #2e3033;
   width: 100%;
   height: 100%;
-  text-align: justify;
+
 }
 
 .filledbar {
