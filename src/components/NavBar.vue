@@ -92,6 +92,21 @@
         display:none;
     }
 
+    
+    .app::before{
+        content: '';
+        position: absolute;
+        left: -550px;
+        width: 950px;
+        height: 800px;
+        border-bottom-right-radius: 25px;
+        background-color: #34B450;
+        transform: skewY(-380deg);
+        top: -250px;
+    
+    } 
+
+
 }
 
 </style>
