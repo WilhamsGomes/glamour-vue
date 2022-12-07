@@ -95,5 +95,11 @@
           top: 120px;
       }
   }
+
+  @media screen and (max-width: 650px) {
+    #logoG{
+      display:none;
+    }
+  }
   
   </style>
