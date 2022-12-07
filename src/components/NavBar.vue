@@ -10,8 +10,11 @@
                 <v-tab to="">Eventos</v-tab>
                 <v-tab to="">Serviços</v-tab>
                 <v-tab to="">Contato</v-tab>
-            </v-tabs> 
+            </v-tabs>
             
+            <v-spacer></v-spacer>
+            <NavBarResponsivo id="menu-responsivo"/>
+
             <v-btn v-for="icon in icons" :key="icon" class="mx-2" dark icon id="icons">
                 <v-icon size="20px">
                 {{ icon }}
@@ -22,6 +25,9 @@
 </template>
 
 <script>
+
+    import NavBarResponsivo from './NavBarResponsivo.vue';
+
     export default {
         name: "NavBar",
         data: () => ({
@@ -31,6 +37,11 @@
             ],
             srcLogo: require("../assets/GLAMOURPNG.png"),
         }),
+
+        components:{
+            NavBarResponsivo
+        }
+
     }
 </script>
 
@@ -58,18 +69,27 @@
    
 } 
 
+#menu-responsivo{
+    display:none;
+}
+
 @media screen and (max-width: 650px) {
 
     #icons{
        display: none !important;
     }
 
-}
+    #menu-responsivo{
+        display:block;
+    }
 
-@media screen and (max-width: 550px) {
+    #menu-responsivo:hover{
+        cursor: pointer;
+        z-index: 1580;
+    }
 
-    .v-tab{
-        font-size: 0.675rem !important;
+    #nav-bar-titles{
+        display:none;
     }
 
 }
