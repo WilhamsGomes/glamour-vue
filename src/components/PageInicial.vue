@@ -98,4 +98,16 @@ import Window from './Window.vue';
     }
 }
 
+@media screen and (max-width: 600px){
+
+    #foto{
+        margin-left: -35px !important;
+    }
+
+    #titleInicial{
+        margin-top: -20px;
+    }
+
+}
+
 </style>

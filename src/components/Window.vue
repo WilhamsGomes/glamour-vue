@@ -58,5 +58,18 @@
 
 }
 
+@media screen and (max-width: 600px) {
+
+    #text{
+        position: relative;
+        width: 250px !important;
+        line-height: 45px;
+        font-size: 35px !important;
+        margin-left: -40px !important;
+        margin-bottom: 20px !important;
+    }
+
+}
+
 
 </style>

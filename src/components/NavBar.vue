@@ -13,7 +13,7 @@
             </v-tabs>
             
             <v-spacer></v-spacer>
-            <NavBarResponsivo id="menu-responsivo"/>
+            <NavBarResponsivo id="menu-responsivo" class="mr-8"/>
 
             <v-btn v-for="icon in icons" :key="icon" class="mx-2" dark icon id="icons">
                 <v-icon size="20px">
@@ -96,7 +96,7 @@
     .app::before{
         content: '';
         position: absolute;
-        left: -650px;
+        left: -600px;
         width: 950px;
         height: 800px;
         border-bottom-right-radius: 25px;
