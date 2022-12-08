@@ -17,6 +17,10 @@
 
 <style scoped>
 
+#maosCelularResp{
+    display: none;
+}
+
 .controle{
     background-color: #34B450;
     display:flex;

@@ -13,7 +13,7 @@
             </v-tabs>
             
             <v-spacer></v-spacer>
-            <NavBarResponsivo id="menu-responsivo" class="mr-8"/>
+            <NavBarResponsivo id="menu-responsivo" />
 
             <v-btn v-for="icon in icons" :key="icon" class="mx-2" dark icon id="icons">
                 <v-icon size="20px">
@@ -51,7 +51,7 @@
     color: #fff;
 }
 
-#app{
+.app{
     z-index: 10 !important;
     overflow-x: hidden !important;
 }

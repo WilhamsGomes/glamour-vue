@@ -43,7 +43,7 @@
                 </v-row>
             </v-form>
         </v-card>
-        <v-card elevation="0" dark class="pb-8">
+        <v-card elevation="0" dark class="pb-8 pt-8">
             <v-img
                 :src="linkSrc"
                 max-height="550"
