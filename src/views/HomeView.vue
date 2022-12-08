@@ -2,7 +2,7 @@
  <v-app id="inspire">
     <NavBar/>
     <PageInicial/>
- 
+    <BtnWhatsApp/>
     <img id="logoG" src="../assets/LOGO.G-VERDE.png"/>
     <Numbers/>
     <CarouselInfo/>
@@ -22,12 +22,11 @@
   import Numbers from "@/components/Numbers.vue";
   import PageInicial from "@/components/PageInicial.vue";
   import Feedback from "@/components/Feedback.vue";
-  import Carrossel from "@/components/Carrossel.vue";
   import Controle from "@/components/Controle.vue";
   import CarouselInfo from "@/components/CarouselInfo.vue";
   import Footer from "@/components/Footer.vue";
   import Video from "@/components/Video.vue";
-  //import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
+  import BtnWhatsApp from "@/components/BtnWhatsApp.vue";
   import FlipbookPhoto from "@/components/FlipbookPhoto.vue";
   import FormWhatsApp from "@/components/FormWhatsApp.vue";
   
@@ -47,12 +46,11 @@
         Numbers,
         PageInicial,
         Feedback,
-        Carrossel,
         Controle,
         CarouselInfo,
         Footer,
         Video,
-      // BtnWhatsApp,
+        BtnWhatsApp,
         FlipbookPhoto,
         FormWhatsApp
       }

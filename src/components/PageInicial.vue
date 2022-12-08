@@ -8,8 +8,6 @@
                             href="https://web.whatsapp.com/" 
                             target="_blank" 
                             id="button" 
-                            class="" 
-                            
                             rounded 
                             color="white" 
                             dark
