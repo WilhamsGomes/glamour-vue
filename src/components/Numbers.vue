@@ -3,7 +3,7 @@
         <v-card min-width="100%" class="mx-auto" color="#125C07">
             <v-container>
             <v-row dense>
-                <v-col cols="12" class="d-flex justify-center align-center flex-wrap">
+                <v-col cols="12" class="d-flex justify-space-around align-center flex-wrap">
                     <div class="display">
                         <v-card-title class="text-h3 white--text font-weight-bold counter" id="number" data-target="637"> +637 </v-card-title>
                         <v-card-subtitle class="text-subtitle-1 white--text" id="text">Turmas satisfeitas</v-card-subtitle>

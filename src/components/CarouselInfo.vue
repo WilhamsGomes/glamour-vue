@@ -141,7 +141,6 @@
 .app::before{
     content: '';
     position: absolute;
-   
     width: 950px;
     height: 800px;
     border-bottom-right-radius: 25px;
