@@ -1,20 +1,31 @@
 <template>
     <div id="PageInicial">
         <section class="intro-section" id="home">
-          <v-row class="align-center justify-space-around px-12 mb-16" >
+          <v-row class="d-flex  align-center justify-space-around px-12 mb-16" >
                     <v-col lg="6" cols="6" class="pa-6 py-16">
                         <Window id="titleInicial"/>
-                        <v-btn href="https://web.whatsapp.com/" target="_blank" id="button" class="ml-16 mb-16" rounded color="white" dark outlined>Entrar em contato</v-btn>
+                        <v-btn 
+                            href="https://web.whatsapp.com/" 
+                            target="_blank" 
+                            id="button" 
+                            class="" 
+                            
+                            rounded 
+                            color="white" 
+                            dark
+                            outlined
+                        >
+                            Entrar em contato
+                        </v-btn>
                     </v-col>
                     <v-col cols="6" >
                         <v-img
                             id="foto"
                             :src="linkSrc"
                             max-width="450"
-                            min-width="250"
+                            min-width="150"
                         >    
                         </v-img>
-                         
                     </v-col>
             </v-row>
         </section>
@@ -101,11 +112,20 @@ import Window from './Window.vue';
 @media screen and (max-width: 600px){
 
     #foto{
-        margin-left: -35px !important;
+        margin-right: -20px !important;
     }
 
     #titleInicial{
+        font-size: 20px;
         margin-top: -20px;
+    }
+    
+    #button{
+        max-width: 150px;
+        font-size: 10px;
+        position: absolute !important; 
+        margin-left: -60px !important;
+        margin-top: -50px !important;
     }
 
 }

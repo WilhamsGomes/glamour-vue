@@ -1,7 +1,7 @@
 <template>
     <div>
         <typical  id="text"
-            class="typicalWrapper display-3 white--text font-weight-bold ml-16 mt-16 "
+            class="typicalWrapper display-3 white--text font-weight-bold  mt-16 "
             :steps="['Há 18 anos, a empresa líder em clientes satisfeitos!', 1000, 'Um novo conceito de assessoria para sua formatura!', 1000, 'VEM SER GLAMOUR!', 1000]"
             :loop="Infinity"
             :wrapper="'h2'"
@@ -40,7 +40,7 @@
         width: 250px !important;
         line-height: 45px;
         font-size: 40px !important;
-        margin-left: -40px !important;
+        /*margin-left: -40px !important;*/
     }
 
 }
@@ -61,12 +61,14 @@
 @media screen and (max-width: 600px) {
 
     #text{
+
         position: relative;
-        width: 250px !important;
-        line-height: 45px;
-        font-size: 35px !important;
-        margin-left: -40px !important;
-        margin-bottom: 20px !important;
+        height: 150px !important;
+        width: 210px !important;
+        line-height: 30px;
+        font-size: 25px !important;
+        margin-left: -50px !important;
+        margin-bottom: 10px !important;
     }
 
 }

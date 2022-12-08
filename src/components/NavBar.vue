@@ -1,6 +1,6 @@
 <template> 
     <div class="app">
-        <v-app-bar app color="#34B450" flat class="justify-center">  
+        <v-app-bar app color="#34B450" flat class="justify-center" >  
             <v-img :src="srcLogo"
                 max-height="50"
                 max-width="120"

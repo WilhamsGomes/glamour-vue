@@ -14,3 +14,11 @@ import HomeView from "./views/HomeView.vue";
   }
   
 </script>
+
+<style>
+
+#app{
+  overflow-x: hidden !important;
+}
+
+</style>
