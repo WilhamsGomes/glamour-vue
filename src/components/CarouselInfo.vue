@@ -1,6 +1,7 @@
 <template>
-    <div class="container">
-        <div class="card">
+    <div class="events">
+      <div class="container">
+        <div class="card" @mouseover="preEvento = true" @mouseleave="preEvento = false">
             <h3 class="title">PRÉ EVENTO</h3>
             <div class="bar">
                 <div class="emptybar">
@@ -9,61 +10,122 @@
                 <div class="filledbar"></div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" @mouseover="aulaSaudade = true" @mouseleave="aulaSaudade = false">
             <h3 class="title">AULA DA <br> SAUDADE</h3>
             <div class="bar">
                 <div class="emptybar">Concretiza-se a finalização de um ciclo. Momento no qual a turma recorda todos os milênios vividos juntos na instituição.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" @mouseover="cultoEcumenico = true" @mouseleave="cultoEcumenico = false">
             <h3 class="title">CULTO ECUMÊNICO</h3>
             <div class="bar">
                 <div class="emptybar">Cerimônia religiosa de formatura em que as pessoas refletem, agradecem e se conectam com sua fé.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" @mouseover="colacaoDeGrau = true" @mouseleave="colacaoDeGrau = false">
             <h3 class="title">COLAÇÃO DE GRAU</h3>
             <div class="bar">
                 <div class="emptybar">Cerimônia acadêmica tradicional e de caráter obrigatório para a outorga de grau do bacharel ou licenciado.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" @mouseover="baileDeFormatura = true" @mouseleave="baileDeFormatura = false">
             <h3 class="title">BAILE DE FORMATURA</h3>
             <div class="bar">
                 <div class="emptybar">O pré-evento é o momento em que a organização é efetivamente feita.</div>
                 <div class="filledbar"></div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" @mouseover="eventosCorporativos = true" @mouseleave="eventosCorporativos = false"> 
             <h3 class="title">EVENTOS CORPORATIVOS</h3>
             <div class="bar">
                 <div class="emptybar">São uma das vias que nos proporcionam experiências e interações. Feiras, Workshops, confraternizações...</div>
                 <div class="filledbar"></div>
             </div>
         </div>
-    </div> 
+      </div> 
+      <div class="galeria">
+        <div class="imagem-div">
+          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
+          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
+          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
+          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
+          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
+          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
+        </div>
+        <div class="imagem-div">
+          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
+          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
+          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
+          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
+          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
+          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
+        </div>
+        <div class="imagem-div">
+          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
+          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
+          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
+          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
+          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
+          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
+        </div>
+        <div class="imagem-div">
+          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
+          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
+          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
+          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
+          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
+          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
     export default {
         name:"CarouselInfo",
-
+        data(){
+          return{
+            preEvento: false,
+            aulaSaudade: false,
+            cultoEcumenico: false,
+            colacaoDeGrau: false,
+            baileDeFormatura: false,
+            eventosCorporativos: false,
+          }
+        }
     }
 </script>
 
 <style scoped>
 
-.container {
-  height: 300px;
-  width: 100%;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  left: calc(50% - 300px);
+.events{
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.galeria{
+  display: grid;
+  width: 50%;
+  grid-template-columns: 300px 300px ;
+}
+
+.imagem-div{
+  margin: 30px 0 30px 80px;
+  background-color: blue;
+  font-size: 15px;
+  color: white;
+  width: 250px;
+  height: 250px;
+}
+
+.container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
 }
 
 .card {
@@ -79,18 +141,12 @@
   left: 0px;
 }
 
-.card:not(:first-child) {
-    margin-left: -50px;
+.card {
+    margin-left: 80px;
 }
 
 .card:hover {
   transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 80px;
   transition: 0.4s ease-out;
 }
 
@@ -153,16 +209,52 @@
 @media screen and (max-width: 900px){
   
     .container{
-        display: grid;
-        grid-template-columns: 100px 100px 100px ;
+        width: 100%;
+        grid-template-columns: 200px 200px;
         gap: 20px;
-        margin-bottom: 280px;
+    }
+    .card:not(:first-child) {
+      margin-left: 1px;
     }
 
-    .card{
-      margin-left: -50px;
+    .card {
+      margin-left: 0px;
     }
 
+    .card:hover {
+      transform: translateY(-20px);
+      transition: 0.4s ease-out;
+    }
+
+    .card:hover ~ .card {
+      position: relative;
+      left: 0px;
+      transition: 0.4s ease-out;
+    }
+
+    .galeria{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 200px 200px;
+    }
+
+    
+    .imagem-div{
+      margin: 30px;
+      background-color: blue;
+     
+    }
+
+    .imagem-div div{
+      width: 150px;
+      height: 150px;
+    }
+
+    .events{
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    
 }
 
 </style>
