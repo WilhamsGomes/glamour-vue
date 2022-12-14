@@ -46,33 +46,9 @@
             </div>
         </div>
       </div> 
-      <div class="galeria">
-        <div class="imagem-div">
-          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
-          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
-          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
-          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
-          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
-          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
-        </div>
-        <div class="imagem-div">
-          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
-          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
-          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
-          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
-          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
-          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
-        </div>
-        <div class="imagem-div">
-          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
-          <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
-          <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
-          <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
-          <div class="img-baileFormatura" v-if="baileDeFormatura">IMAGEM BAILE DE FORMATURA</div>
-          <div class="img-eventosCorporativos" v-if="eventosCorporativos">IMAGEM EVENTOS CORPORATIVOS</div>
-        </div>
-        <div class="imagem-div">
-          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ EVENTO</div>
+      <div class="galeria" >
+        <div class="imagem-div" v-for="item, index in 4" :key="index">
+          <div class="img-preEvento" v-if="preEvento">IMAGEM PRÉ-EVENTO</div>
           <div class="img-aulaSaudade" v-if="aulaSaudade">IMAGEM AULA DA SAUDADE</div>
           <div class="img-cultoEcumenico" v-if="cultoEcumenico">IMAGEM CULTO ECUMENICO</div>
           <div class="img-colacaoGrau" v-if="colacaoDeGrau">IMAGEM COLAÇÃO DE GRAU</div>
@@ -94,6 +70,14 @@
             colacaoDeGrau: false,
             baileDeFormatura: false,
             eventosCorporativos: false,
+            items: [
+              {class: "img-preEvento", text: "IMAGEM PRÉ EVENTO"},
+              {class: "img-aulaSaudade", text: "IMAGEM AULA DA SAUDADE"},
+              {class: "img-cultoEcumenico", text: "IMAGEM CULTO ECUMENICO"},
+              {class: "img-colacaoGrau", text: "IMAGEM COLAÇÃO DE GRAU"},
+              {class: "img-baileFormatura", text: "IMAGEM BAILE DE FORMATURA"},
+              {class: "img-eventosCorporativos", text: "IMAGEM EVENTOS CORPORATIVOS"},
+            ]
           }
         }
     }
