@@ -126,6 +126,7 @@
   width: 50%;
   display: grid;
   grid-template-columns: 200px 200px 200px;
+  gap: 10px;
 }
 
 .card {
@@ -236,18 +237,19 @@
       width: 100%;
       display: grid;
       grid-template-columns: 200px 200px;
+      gap: 20px;
     }
-
     
     .imagem-div{
       margin: 30px;
       background-color: blue;
-     
     }
 
-    .imagem-div div{
-      width: 150px;
-      height: 150px;
+    .galeria div{
+      width: 200px;
+      padding: 10px;
+      height: 200px;
+      margin: 20px;
     }
 
     .events{
@@ -255,6 +257,17 @@
       flex-direction: column;
     }
     
+}
+
+@media screen and (max-width: 400px){
+
+    .galeria, .container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 }
 
 </style>
